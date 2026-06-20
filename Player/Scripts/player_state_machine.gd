@@ -9,6 +9,10 @@ func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_DISABLED
 
 
+func Initialize() -> void:
+	pass
+
+
 func ChangeState(new_state: State) -> void:
 	if new_state == null or new_state == current_state:
 		return
