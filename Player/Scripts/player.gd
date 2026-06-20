@@ -22,3 +22,7 @@ func _physics_process(delta: float) -> void:
 
 func SetDirection() -> bool:
 	return true
+
+
+func SetState() -> bool:
+	return true
