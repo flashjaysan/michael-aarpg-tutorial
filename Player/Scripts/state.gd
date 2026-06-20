@@ -14,5 +14,6 @@ func Exit() -> void:
 	pass
 
 
+## What happens during the _process update in this State?
 func Process(_delta: float) -> State:
 	return null
