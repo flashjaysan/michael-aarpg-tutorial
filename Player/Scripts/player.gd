@@ -27,6 +27,12 @@ func SetDirection() -> bool:
 
 
 func SetState() -> bool:
+	var new_state: String = "idle" if direction == Vector2.ZERO else "walk"
+	
+	if state == new_state:
+		return false
+	
+	state = new_state
 	return true
 
 
