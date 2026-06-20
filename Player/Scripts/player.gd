@@ -31,4 +31,4 @@ func SetState() -> bool:
 
 
 func UpdateAnimation() -> void:
-	pass
+	animation_player.play("idle_down")
