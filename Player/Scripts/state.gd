@@ -12,3 +12,7 @@ func Enter() -> void:
 ## What happens when the player exits this State?
 func Exit() -> void:
 	pass
+
+
+func Process(_delta: float) -> State:
+	return null
