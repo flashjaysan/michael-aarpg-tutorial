@@ -1,17 +1,8 @@
 [gd_scene format=3 uid="uid://gm370l3ndrru"]
 
-[ext_resource type="Texture2D" uid="uid://djtndl5omwqb5" path="res://Player/Sprites/ExamplePlayerSprite.png" id="1_rupst"]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_edjgo"]
+[ext_resource type="PackedScene" uid="uid://bu7qqvdvks2ks" path="res://Player/player.tscn" id="1_rupst"]
 
 [node name="Playground" type="Node2D" unique_id=126005093]
 
-[node name="Player" type="CharacterBody2D" parent="." unique_id=1942305754]
+[node name="Player" parent="." unique_id=992449619 instance=ExtResource("1_rupst")]
 position = Vector2(225, 126)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=856911009]
-shape = SubResource("CircleShape2D_edjgo")
-
-[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=1488279914]
-texture = ExtResource("1_rupst")
-hframes = 21
