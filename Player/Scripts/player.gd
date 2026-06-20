@@ -31,7 +31,7 @@ func SetDirection() -> bool:
 	
 	if direction.y == 0:
 		new_direction = Vector2.LEFT if direction.x < 0 else Vector2.RIGHT
-	else:
+	elif direction.x == 0:
 		new_direction = Vector2.UP if direction.y < 0 else Vector2.DOWN
 	
 	if new_direction == cardinal_direction:
