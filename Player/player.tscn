@@ -10,5 +10,6 @@
 shape = SubResource("CircleShape2D_edjgo")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1709553597]
+position = Vector2(0, -21)
 texture = ExtResource("1_l8h54")
 hframes = 21
