@@ -26,3 +26,7 @@ func SetDirection() -> bool:
 
 func SetState() -> bool:
 	return true
+
+
+func UpdateAnimation() -> void:
+	pass
