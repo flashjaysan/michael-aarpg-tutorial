@@ -32,3 +32,7 @@ func SetState() -> bool:
 
 func UpdateAnimation() -> void:
 	animation_player.play(state + "_" + "down")
+
+
+func Animdirection() -> String:
+	return ""
