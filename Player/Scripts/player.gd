@@ -5,6 +5,8 @@ var direction: Vector2 = Vector2.ZERO
 var move_speed: float = 100.0
 var state:String = "idle"
 
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+
 
 func _process(delta: float) -> void:
 	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
