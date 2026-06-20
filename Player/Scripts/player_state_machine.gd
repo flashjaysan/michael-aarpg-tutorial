@@ -9,8 +9,17 @@ func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_DISABLED
 
 
-func Initialize() -> void:
-	pass
+func Initialize(_player: Player) -> void:
+	states = []
+	
+	for child in get_children():
+		if child is State:
+			states.append(child)
+	
+	if states.size() > 0:
+		states[0].player = _player
+		ChangeState(states[0])
+		process_mode = Node.PROCESS_MODE_INHERIT
 
 
 func ChangeState(new_state: State) -> void:
