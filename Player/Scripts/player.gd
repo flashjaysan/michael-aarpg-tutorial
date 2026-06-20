@@ -24,6 +24,21 @@ func _physics_process(delta: float) -> void:
 
 
 func SetDirection() -> bool:
+	var new_direction: Vector2 = cardinal_direction
+	
+	if direction == Vector2.ZERO:
+		return false
+	
+	if direction.y == 0:
+		new_direction = Vector2.LEFT if direction.x < 0 else Vector2.RIGHT
+	else:
+		new_direction = Vector2.UP if direction.y < 0 else Vector2.DOWN
+	
+	if new_direction == cardinal_direction:
+		return false
+	
+	cardinal_direction = new_direction
+	sprite.scale.x = -1 if cardinal_direction == Vector2.LEFT else 1
 	return true
 
 
