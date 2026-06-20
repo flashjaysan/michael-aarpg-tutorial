@@ -15,7 +15,7 @@ func _process(delta: float) -> void:
 	
 	velocity = direction * move_speed
 	
-	if SetState():
+	if SetState() or SetDirection():
 		UpdateAnimation()
 
 
