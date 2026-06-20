@@ -4,5 +4,6 @@ class_name State extends Node
 static var player: Player
 
 
+## What happens when the player enters this State?
 func Enter() -> void:
 	pass
