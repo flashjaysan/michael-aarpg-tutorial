@@ -6,6 +6,7 @@ var move_speed: float = 100.0
 var state:String = "idle"
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var sprite: Sprite2D = $Sprite2D
 
 
 func _process(delta: float) -> void:
