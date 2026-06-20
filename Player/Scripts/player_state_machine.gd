@@ -10,4 +10,12 @@ func _ready() -> void:
 
 
 func ChangeState(new_state: State) -> void:
-	pass
+	if new_state == null or new_state == current_state:
+		return
+	
+	if current_state:
+		current_state.Exit()
+	
+	previous_state = current_state
+	current_state = new_state
+	current_state.Enter()
