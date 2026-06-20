@@ -6,4 +6,4 @@ var current_state: State
 
 
 func _ready() -> void:
-	pass
+	process_mode = Node.PROCESS_MODE_DISABLED
