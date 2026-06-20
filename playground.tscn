@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://gm370l3ndrru"]
 
+[ext_resource type="Texture2D" uid="uid://djtndl5omwqb5" path="res://Player/Sprites/ExamplePlayerSprite.png" id="1_rupst"]
+
 [sub_resource type="CircleShape2D" id="CircleShape2D_edjgo"]
 
 [node name="Playground" type="Node2D" unique_id=126005093]
@@ -10,3 +12,4 @@
 shape = SubResource("CircleShape2D_edjgo")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1488279914]
+texture = ExtResource("1_rupst")
