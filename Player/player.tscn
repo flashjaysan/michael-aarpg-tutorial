@@ -22,6 +22,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_4ntmi"]
 resource_name = "idle_down"
+length = 0.19999999999999998
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
