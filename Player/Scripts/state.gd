@@ -7,3 +7,8 @@ static var player: Player
 ## What happens when the player enters this State?
 func Enter() -> void:
 	pass
+
+
+## What happens when the player exits this State?
+func Exit() -> void:
+	pass
