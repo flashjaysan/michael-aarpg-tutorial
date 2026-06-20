@@ -8,3 +8,5 @@
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=856911009]
 shape = SubResource("CircleShape2D_edjgo")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1488279914]
