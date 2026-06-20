@@ -15,7 +15,8 @@ func _process(delta: float) -> void:
 	
 	velocity = direction * move_speed
 	
-	UpdateAnimation()
+	if SetState():
+		UpdateAnimation()
 
 
 func _physics_process(delta: float) -> void:
