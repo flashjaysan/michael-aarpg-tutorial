@@ -17,3 +17,8 @@ func Exit() -> void:
 ## What happens during the _process update in this State?
 func Process(_delta: float) -> State:
 	return null
+
+
+## What happens during the _physics_process update in this State?
+func Physics(_delta: float) -> State:
+	return null
